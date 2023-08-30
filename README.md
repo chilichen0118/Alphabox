@@ -21,7 +21,7 @@
 ### Links
 
 - Solution URL: [repo](/)
-- Live Site URL: [pages](/)
+- Live Site URL: [pages](/https://chilichen0118.github.io/Alphabox/)
 
 ## Process
 
