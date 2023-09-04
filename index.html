@@ -14,8 +14,8 @@
 <!-- google material icon -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <!-- swiper -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />    <script type="module" crossorigin src="/Alphabox/assets/main-958dfb77.js"></script>
-    <link rel="stylesheet" href="/Alphabox/assets/main-b8bf9562.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />    <script type="module" crossorigin src="/Alphabox/assets/main-34f8f371.js"></script>
+    <link rel="stylesheet" href="/Alphabox/assets/main-eb132592.css">
   </head>
   <body>
     <nav class="bg-primary d-flex">
@@ -24,15 +24,18 @@
         <!-- pc -->
         <div class="d-lg-flex gap-40  d-none ">
             <a href="#" class="text-light d-block">產品</a>
-            <a href="/Alphabox/pages/about.html" class="text-light d-block">關於我們</a>
-            <a href="#" class="text-light d-block">最新消息</a>
-            <a href="/Alphabox/pages/faq.html" class="text-light d-block noto-sans-CJK-TC">FAQ</a>
+            <a href="./about.html" class="text-light d-block">關於我們</a>
+            <a href="./news.html" class="text-light d-block">最新消息</a>
+            <a href="./faq.html" class="text-light d-block noto-sans-CJK-TC">FAQ</a>
             <a href="#" class="text-light d-block">聯絡我們</a>
         </div>
         <div class="d-lg-flex align-items-center gap-24  d-none ">
             <a href="#" class="text-light">註冊</a>
             <a href="#" class="text-light">登入</a>
-            <a href="#" class="bg-light text-dark px-16 py-8 border-radius-sm btn d-flex align-items-center"><img src="/Alphabox/assets/point_scan-b590b6b4.svg" alt="scan icon"><p>訂閱</p></a>
+            <a href="#" class="px-16 py-8 border-radius-sm btn btn-dark d-flex align-items-center"><span
+              class="material-symbols-outlined">
+              point_scan
+          </span><p>訂閱</p></a>
         </div>
         <!-- mobile hamburgur -->
         <div class="hamburgur d-lg-none">
@@ -70,8 +73,8 @@
             <p class="col-lg-4 border-top noto-sans-CJK-TC ls-1-6 pb-8">ALPHABOX+ STUDIO</p>
           </div>
         </div>
-        <div class="d-flex justify-content-center">
-          <img src="/Alphabox/assets/circle-10d6fa5f.png" alt="icon circle" class="col-lg-2 rotate">
+        <div class="overflow-hidden d-flex justify-content-center">
+          <img src="/Alphabox/assets/circle-10d6fa5f.png" alt="icon circle" class="col-lg-2 rotate icon-circle">
         </div>
         <div class="d-lg-flex justify-content-between pb-56 d-none">
         <p class="border-bottom noto-sans-CJK-TC pb-8">最新消息！新版本 v15.4 釋出，搶先體驗！</p>
@@ -428,8 +431,14 @@
             emergency
             </span>
           <form>
-            <input type="email" class="d-block noto-sans-CJK-TC mb-16 py-8" placeholder="EMAIL">
-            <input type="text" class="d-block noto-sans-CJK-TC text-warning mb-16 pt-8 pb-82" placeholder="COMMENTS">
+            <div class="form-floating">
+              <input type="email" class="form-control bg-light text-dark d-block noto-sans-CJK-TC mb-16 py-8 pt-24" id="emailInput" placeholder="EMAIL">
+              <label for="emailInput" class="noto-sans-CJK-TC text-dark">EMAIL</label>
+            </div>
+            <div class="form-floating">
+              <input type="text" class="form-control bg-light text-dark d-block noto-sans-CJK-TC text-warning mb-16 pt-40 pb-82" id="commentInput" placeholder="COMMENTS">
+              <label for="commentInput" class="noto-sans-CJK-TC text-dark">COMMENT</label>
+            </div>
             <button type="button" class="col-md-4 col-12 bg-success text-light"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <mask id="mask0_464_3402" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
                 <rect width="24" height="24" fill="#D9D9D9"/>
@@ -455,7 +464,15 @@
               <h5 class="h6 fw-bold mb-0">知識型</h5>
               <p class="mb-0">學術領導/知識分享/智能問答</p>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="155" height="24" viewBox="0 0 155 24" fill="none">
+            <svg class="d-md-flex d-none" xmlns="http://www.w3.org/2000/svg" width="155" height="24" viewBox="0 0 155 24" fill="none">
+              <mask id="mask0_2884_6" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="155" height="24">
+                <rect width="155" height="24" fill="#D9D9D9"/>
+              </mask>
+              <g mask="url(#mask0_2884_6)">
+                <path d="M142 19L145.425 13H2V11H145.425L142 5L153 12L142 19Z" fill="white"/>
+              </g>
+            </svg>
+            <svg class="d-flex d-md-none" xmlns="http://www.w3.org/2000/svg" width="80" height="24" viewBox="0 0 155 24" fill="none">
               <mask id="mask0_2884_6" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="155" height="24">
                 <rect width="155" height="24" fill="#D9D9D9"/>
               </mask>
@@ -477,7 +494,15 @@
               <h5 class="h6 fw-bold mb-0">娛樂型</h5>
               <p class="mb-0">音樂播放/語音互動/遊戲陪伴</p>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="155" height="24" viewBox="0 0 155 24" fill="none">
+            <svg class="d-md-flex d-none" xmlns="http://www.w3.org/2000/svg" width="155" height="24" viewBox="0 0 155 24" fill="none">
+              <mask id="mask0_2884_6" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="155" height="24">
+                <rect width="155" height="24" fill="#D9D9D9"/>
+              </mask>
+              <g mask="url(#mask0_2884_6)">
+                <path d="M142 19L145.425 13H2V11H145.425L142 5L153 12L142 19Z" fill="white"/>
+              </g>
+            </svg>
+            <svg class="d-flex d-md-none" xmlns="http://www.w3.org/2000/svg" width="80" height="24" viewBox="0 0 155 24" fill="none">
               <mask id="mask0_2884_6" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="155" height="24">
                 <rect width="155" height="24" fill="#D9D9D9"/>
               </mask>
@@ -499,7 +524,15 @@
               <h5 class="h6 fw-bold mb-0">生活型</h5>
               <p class="mb-0">健康提醒/日程安排/智能家居</p>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="155" height="24" viewBox="0 0 155 24" fill="none">
+            <svg class="d-md-flex d-none" xmlns="http://www.w3.org/2000/svg" width="155" height="24" viewBox="0 0 155 24" fill="none">
+              <mask id="mask0_2884_6" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="155" height="24">
+                <rect width="155" height="24" fill="#D9D9D9"/>
+              </mask>
+              <g mask="url(#mask0_2884_6)">
+                <path d="M142 19L145.425 13H2V11H145.425L142 5L153 12L142 19Z" fill="white"/>
+              </g>
+            </svg>
+            <svg class="d-flex d-md-none" xmlns="http://www.w3.org/2000/svg" width="80" height="24" viewBox="0 0 155 24" fill="none">
               <mask id="mask0_2884_6" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="155" height="24">
                 <rect width="155" height="24" fill="#D9D9D9"/>
               </mask>
@@ -521,7 +554,15 @@
               <h5 class="h6 fw-bold mb-0">情感型</h5>
               <p class="mb-0">情感識別/心情分析/心靈支持</p>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="155" height="24" viewBox="0 0 155 24" fill="none">
+            <svg class="d-md-flex d-none" xmlns="http://www.w3.org/2000/svg" width="155" height="24" viewBox="0 0 155 24" fill="none">
+              <mask id="mask0_2884_6" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="155" height="24">
+                <rect width="155" height="24" fill="#D9D9D9"/>
+              </mask>
+              <g mask="url(#mask0_2884_6)">
+                <path d="M142 19L145.425 13H2V11H145.425L142 5L153 12L142 19Z" fill="white"/>
+              </g>
+            </svg>
+            <svg class="d-flex d-md-none" xmlns="http://www.w3.org/2000/svg" width="80" height="24" viewBox="0 0 155 24" fill="none">
               <mask id="mask0_2884_6" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="155" height="24">
                 <rect width="155" height="24" fill="#D9D9D9"/>
               </mask>
@@ -543,9 +584,9 @@
             emergency
             </span>
         <div class="d-lg-flex gap-24">
-            <a href="#" class="text-dark">關於我們</a>
+            <a href="/Alphabox/pages/about.html" class="text-dark">關於我們</a>
             <a href="#" class="text-dark">產品資訊</a>
-            <a href="/pages/faq.html" class="text-dark">常見問題</a>
+            <a href="/Alphabox/pages/faq.html" class="text-dark">常見問題</a>
             <a href="#" class="text-dark">隱私政策</a>
         </div>
     </div>
@@ -556,9 +597,9 @@
             emergency
             </span>
         <div class="d-lg-flex gap-24">
-            <a href="#" class="text-dark d-block mb-8">關於我們</a>
+            <a href="/Alphabox/pages/about.html" class="text-dark d-block mb-8">關於我們</a>
             <a href="#" class="text-dark d-block mb-8">產品資訊</a>
-            <a href="/pages/faq.html" class="text-dark d-block mb-8">常見問題</a>
+            <a href="/Alphabox/pages/faq.html" class="text-dark d-block mb-8">常見問題</a>
             <a href="#" class="text-dark d-block mb-8">隱私政策</a>
         </div>
         <p class="text-dark">Copyright © 2023 Hexschool.</p>
